@@ -34,7 +34,6 @@ class AuthProvider with ChangeNotifier {
     }
   }
 
-  // Assuming you have a Users collection in Firestore with a document for each user identified by their UID
 
   Future<void> updateUser(String name, String password) async {
     final user = FirebaseAuth.instance.currentUser;

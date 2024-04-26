@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, use_super_parameters
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/movie.dart';

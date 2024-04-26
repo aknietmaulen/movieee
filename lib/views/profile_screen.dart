@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+  const ProfileScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +13,14 @@ class ProfileScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Welcome, User!"),  // Ideally, this should fetch user data
+            const Text("Welcome, User!"), 
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => Provider.of<AuthProvider>(context, listen: false).logout(),
+              onPressed: () {
+                Provider.of
+                <AuthProvider>(context, listen: false).logout();
+                Navigator.pushReplacementNamed(context, '/');
+              },
               child: const Text("Logout"),
             ),
           ],
@@ -25,7 +29,3 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
-//ARCHITECTURE
-//PROFILE
-//FIGMA
-//GITHUB

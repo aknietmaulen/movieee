@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "247551510909",
+    "project_id": "movieee-ba957",
+    "storage_bucket": "movieee-ba957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247551510909:android:70a9fb374c96ed826fa414",
+        "android_client_info": {
+          "package_name": "com.example.movieee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpuHKtROPf3O7pjf1yJV63KMlaM7LBNAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
